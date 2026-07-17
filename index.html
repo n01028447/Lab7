@@ -18,10 +18,15 @@
         #myForm {
             margin-top: 10px;
         }
+
+        #idnumber {
+            margin-top: 10px;
+        }
     </style>
     <script src="mouseevents.js" defer></script>
     <script src="keyboardevents.js"></script>
     <script src="formevents.js"></script>
+    <script src="focusevents.js"></script>
 </head>
 
 <body>
@@ -45,5 +50,9 @@
     </form>
 
 </body>
+
+
+<label for="Id number">Id#: </label>
+<input type="text" id="idnumber" onfocus="handleFocus();" onblur="handleBlur()">
 
 </html>
