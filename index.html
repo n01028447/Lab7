@@ -2,9 +2,11 @@
 <html lang="en">
 
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
     <style>
         #box {
             background-color: orange;
@@ -22,11 +24,18 @@
         #idnumber {
             margin-top: 10px;
         }
+
+        #myList {
+            margin-top: 10px;
+        }
     </style>
+
     <script src="mouseevents.js" defer></script>
-    <script src="keyboardevents.js"></script>
-    <script src="formevents.js"></script>
-    <script src="focusevents.js"></script>
+    <script src="keyboardevents.js" defer></script>
+    <script src="formevents.js" defer></script>
+    <script src="focusevents.js" defer></script>
+    <script src="eventdelegation.js" defer></script>
+
 </head>
 
 <body>
@@ -49,10 +58,20 @@
         <button type="submit">Submit</button>
     </form>
 
+    <label for="Id number">Id#: </label>
+    <input type="text" id="idnumber" onfocus="handleFocus();" onblur="handleBlur()">
+
+    <ul id="myList">
+        <li>Straberry Shortcake</li>
+        <li>Red Velvet</li>
+        <li>Black Forrest</li>
+        <li>Tiramisu</li>
+        <li>New York Cheesecake</li>
+    </ul>
+
+    
+
+
 </body>
-
-
-<label for="Id number">Id#: </label>
-<input type="text" id="idnumber" onfocus="handleFocus();" onblur="handleBlur()">
 
 </html>
